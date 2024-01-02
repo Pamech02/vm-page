@@ -29,10 +29,10 @@ export const NavLinks = () => {
                         </h2>
                         {link.submenu &&
                             <div>
-                                <div className='absolute top-[100px] hidden md:group-hover:block md:hover:block'>
-                                    <div className='bg-white p-3.5'>
+                                <div className='absolute top-50 hidden md:group-hover:block md:hover:block'>
+                                    <div className='bg-white p-3.5 border border-blue-400 opacity-95'>
                                         {link.subLinks.map(subLink =>
-                                            <div key={subLink.titulo}><Link href={''} className='text-lg text-gray-600 my-2.5 hover:text-blue-500'>{subLink.titulo}</Link></div>
+                                            <div key={subLink.titulo} className='py-5'><Link href={''} className='text-lg font-semibold text-gray-600 my-2.5 hover:text-blue-500'>{subLink.titulo}</Link></div>
                                         )}
                                     </div>
                                 </div>
@@ -42,9 +42,9 @@ export const NavLinks = () => {
                     <div className={`${click ? 'hidden' : 'md:hidden'}`}>
                         {link.subLinks?.map(slink =>
                             <div key={slink.titulo}>
-                                <div>
+                                
                                     <h2 className='py-4 pl-7 font-semibold md:pr-0 pr-5 flex justify-between items-center'>{slink.titulo}</h2>
-                                </div>
+                                
                             </div>
                         )}
                     </div>

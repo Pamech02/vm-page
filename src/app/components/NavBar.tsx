@@ -28,9 +28,9 @@ export const NavBar = () => {
         <>
             <nav className='bg-white'>
                 <div className='flex items-center font-medium justify-around text-xl'>
-                <div className='z-50 p-5 md:w-auto w-full flex justify-between'>
+                <div className='z-50 p-5 md:p-1 md:w-auto w-full flex justify-between'>
                 <Link className='' href='/'>
-                    <Image src='/logo-vm.png' alt='logo' height={300} width={300} />
+                    <Image src='/logo-vm.png' alt='logo' height={250} width={300} />
                 </Link>
                 </div>
             {/* <div className={`absolute sm:static bg-white sm:bg-blue-300 min-h-[45vh] left-0 w-full flex items-center justify-center px-5 sm:min-h-fit sm:w-auto ${isOpen === true ? 'top-[12%]' : 'top-[-100%]'}`}>
